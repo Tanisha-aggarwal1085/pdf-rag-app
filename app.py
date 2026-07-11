@@ -51,7 +51,7 @@ if uploaded_file is not None and st.session_state.vector_store is None:
         # Store in AstraDB
         vector_store = AstraDBVectorStore(
             embedding=embedding_model,
-            collection_name="pdf_rag_collection",
+            collection_name="pdf_rag_streamlit",
             api_endpoint=ASTRA_DB_API_ENDPOINT,
             token=ASTRA_DB_APPLICATION_TOKEN,
         )
